@@ -7,11 +7,32 @@
 //Output
 //7 39 282 2 4 45 0 0 0
 //
-$arr = array(7, 0, 39, 0, 282, 2, 4, 0, 45);
+//$inputArray = [7, 0, 39, 0, 282, 2, 4, 0, 45];
+//$zeroCount = 0;
 //
-$zero_count = 0;
-foreach ($arr as $value) {
-    if ($value != 0) echo $value . ' ';
-    else $zero_count++;
+//foreach ($inputArray as $value) {
+//    if ($value != 0) {
+//        echo $value . ' ';
+//    }
+//    else {
+//        $zeroCount++;
+//    }
+//}
+//
+//echo str_repeat('0 ', $zeroCount);
+
+$inputArray = [7, 0, 39, 0, 282, 2, 4, 0, 45];
+$zeros = [];
+$arrayWithoutZero = [];
+
+foreach ($inputArray as $value) {
+    if ($value != 0) {
+        $arrayWithoutZero[] = $value;
+    }
+    else {
+        $zeros[] = $value;
+    }
 }
-echo str_repeat('0 ', $zero_count);
+
+$output = implode(' ', array_merge($arrayWithoutZero, $zeros));
+echo $output;
