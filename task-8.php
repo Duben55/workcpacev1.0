@@ -1,4 +1,9 @@
 <?php
+//Родительский класс Post со свойствами Заголовок и Текст
+//Дочерный класс Lesson от Post с допонительным свойством homework
+//Дочерный класс PaidLesson от Lesson с допонительным свойством price
+//Модификатор доступа protected, вызов родительского метода
+
 class Post
 {
     protected string $title;
@@ -57,7 +62,7 @@ class paidLesson extends Lesson
     }
     public function getPrise(): float
     {
-        return $this->homework;
+        return $this->prise;
     }
     public function setPrise(float $prise): void
     {
