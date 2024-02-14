@@ -1,0 +1,20 @@
+{
+  "name": "duben55/drug-store",
+  "type": "project",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "duben55",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "MyProject\\": "./"
+    }
+  }
+}
