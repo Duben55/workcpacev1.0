@@ -6,15 +6,11 @@
 
 final class Cat
 {
-    private string $name;
-    private string $color;
-    private float $weight;
-
-    public function __construct(string $name, string $color, float $weight)
-    {
-        $this->name = $name;
-        $this->color = $color;
-        $this->weight = $weight;
+    public function __construct(
+        private string $name,
+        private string $color,
+        private float  $weight
+    ) {
     }
 
     public function sayHello(): void
@@ -22,13 +18,6 @@ final class Cat
         echo 'Привет! Меня зовут ' . $this->name . '.' . PHP_EOL;
         echo 'Мой цвет - ' . $this->color . '.' . PHP_EOL;
         echo 'Мой вес равен ' . $this->weight . ' килограмм.' . PHP_EOL;
-    }
-
-    public function setCatData(string $name, string $color, float $weight): void
-    {
-        $this->name = $name;                    //сеттер
-        $this->color = $color;
-        $this->weight = $weight;
     }
 
     public function getName(): string                    //геттер
@@ -44,6 +33,21 @@ final class Cat
     public function getWeight(): string                    //геттер
     {
         return $this->weight;
+    }
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function setColor(string $color): void
+    {
+        $this->color = $color;
+    }
+
+    public function setWeight(float $weight): void
+    {
+        $this->weight = $weight;
     }
 }
 
