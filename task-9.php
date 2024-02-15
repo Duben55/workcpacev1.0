@@ -49,7 +49,7 @@ final class Circle implements CalculateSquare
 $objects = [
     new Square(5),
     new Rectangle(2, 4),
-    new Circle(5)
+    new Circle(5),
 ];
 
 foreach ($objects as $object) {
