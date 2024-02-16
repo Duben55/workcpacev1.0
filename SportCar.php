@@ -1,14 +1,5 @@
 <?php
-
-class SportCar extends CarFactory
+namespace MyProject;
+class SportCar extends Factory
 {
-    public function __construct(array $carsArray)
-    {
-        parent::__construct($carsArray);
-    }
-    public static function makeFromArray(array $carsArray): void
-    {
-        $newCar = new self($carsArray);
-        self::addCars($newCar);
-    }
 }

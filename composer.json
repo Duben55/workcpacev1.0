@@ -1,0 +1,19 @@
+{
+  "name": "duben55/untitled",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "duben55",
+      "email": "duben55@mail.ru"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "MyProject\\": "./"
+    }
+  }
+}

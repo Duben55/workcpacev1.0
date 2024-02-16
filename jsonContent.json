@@ -1,0 +1,23 @@
+[
+  {
+    "name": "BMW",
+    "color": "white",
+    "weight": 3,
+    "length": 4.5,
+    "types": "business"
+  },
+  {
+    "name": "mazeratti",
+    "color": "multicolor",
+    "weight": 2.8,
+    "length": 4,
+    "types": "sport"
+  },
+  {
+    "name": "audi",
+    "color": "black",
+    "weight": 3.3,
+    "length": 3.9,
+    "types": "economical"
+  }
+]
